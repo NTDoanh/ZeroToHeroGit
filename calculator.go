@@ -4,15 +4,15 @@ import (
 	"fmt"
 )
 
-func add(a, b int) {
-	fmt.Printf("%d + %d = %d\n", a, b, a+b)
+func add(a, b float64) {
+	fmt.Printf("%.2f + %.2f = %.2f\n", a, b, a+b)
 }
-func subtract(a, b int) {
+func subtract(a, b float64) {
 
-	fmt.Printf("%d - %d = %d\n", a, b, a-b)
+	fmt.Printf("%.2f - %.2f = %.2f\n", a, b, a-b)
 }
 func divide(a, b float64) {
-	fmt.Printf("%f / %f = %f\n", a, b, a/b)
+	fmt.Printf("%.2f / %.2f = %.2f\n", a, b, a/b)
 }
 func main() {
 	var a, b float64
@@ -28,6 +28,8 @@ func main() {
 		add(a, b)
 	case "-":
 		subtract(a, b)
+	case "/":
+		divide(a, b)
 	default:
 		fmt.Printf("Chua co phep nay hoac nhap sai")
 	}
