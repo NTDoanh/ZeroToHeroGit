@@ -8,11 +8,14 @@ func add(a, b int) {
 	fmt.Printf("%d + %d = %d\n", a, b, a+b)
 }
 func subtract(a, b int) {
+
 	fmt.Printf("%d - %d = %d\n", a, b, a-b)
 }
-
+func divide(a, b float64) {
+	fmt.Printf("%f / %f = %f\n", a, b, a/b)
+}
 func main() {
-	var a, b int
+	var a, b float64
 	var c string
 	fmt.Print("Nhap so thu nhat: ")
 	fmt.Scanln(&a)
