@@ -7,6 +7,9 @@ import (
 func add(a, b int) {
 	fmt.Printf("%d + %d = %d\n", a, b, a+b)
 }
+func multiply(a, b int) {
+	fmt.Printf("%d + %d = %d\n", a, b, a*b)
+}
 func subtract(a, b int) {
 	fmt.Printf("%d - %d = %d\n", a, b, a-b)
 }
@@ -25,6 +28,8 @@ func main() {
 		add(a, b)
 	case "-":
 		subtract(a, b)
+	case "*":
+		multiply(a, b)
 	default:
 		fmt.Printf("Chua co phep nay hoac nhap sai")
 	}
